@@ -1,5 +1,5 @@
 from Pyro4 import expose
-import math
+
 class Solver:
     
     def __init__(self, workers=None, input_file_name=None, output_file_name=None):
@@ -18,7 +18,7 @@ class Solver:
         s = self.read_input()
         leng = len(s)
         n = len(self.workers)
-        sub_leng = math.ceil(leng / n)
+        sub_leng = -(-leng // n)
         
         # map
         mapped = []
