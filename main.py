@@ -18,7 +18,7 @@ class Solver:
         s = self.read_input()
         leng = len(s)
         n = len(self.workers)
-        sub_leng = leng // n
+        sub_leng = math.ceil(leng / n)
         
         # map
         mapped = []
