@@ -19,7 +19,7 @@ int main() {
     int length = 30000000;
     std::string randomString = generateRandomString(length);
 
-    std::ofstream outputFile("output.txt");
+    std::ofstream outputFile("input.txt");
     if (outputFile.is_open()) {
         outputFile << randomString;
         outputFile.close();
